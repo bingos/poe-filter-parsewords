@@ -13,7 +13,7 @@ use vars qw($VERSION);
 use base qw(POE::Filter);
 use Text::ParseWords;
 
-$VERSION = '1.04';
+$VERSION = '1.06';
 
 sub new {
   my $class = shift;
@@ -84,7 +84,7 @@ put to is in the examples/ directory of this distribution.
 
 =over
 
-=item new
+=item C<new>
 
 Creates a new POE::Filter::ParseWords object. Takes two optional arguments:
 
@@ -97,20 +97,20 @@ Creates a new POE::Filter::ParseWords object. Takes two optional arguments:
 
 =over
 
-=item get
+=item C<get>
 
-=item get_one_start
+=item C<get_one_start>
 
-=item get_one
+=item C<get_one>
 
 Takes an arrayref which is contains lines of text. Returns an arrayref of lists of
 tokenised output.
 
-=item put
+=item C<put>
 
 This is not implemented.
 
-=item clone
+=item C<clone>
 
 Makes a copy of the filter, and clears the copy's buffer.
 
@@ -118,11 +118,11 @@ Makes a copy of the filter, and clears the copy's buffer.
 
 =head1 AUTHOR
 
-Chris "BinGOs" Williams
+Chris C<BinGOs> Williams
 
 =head1 LICENSE
 
-Copyright (C) Chris Williams
+Copyright E<copy> Chris Williams
 
 This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 

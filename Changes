@@ -1,6 +1,8 @@
 POE::Filter::ParseWords
 =======================
 
+1.06	Thu May 21 22:56:17 BST 2009
+	- Makefile.PL: auto_license, auto_provides and githubmeta
 1.04	Tue Jun 24 13:14:53 BST 2008
 	- Added LICENSE information.
 
