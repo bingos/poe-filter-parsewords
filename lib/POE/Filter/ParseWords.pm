@@ -7,13 +7,12 @@
 
 package POE::Filter::ParseWords;
 
+#ABSTRACT: A POE-based parser to parse text into an array of tokens.
+
 use strict;
 use warnings;
-use vars qw($VERSION);
 use base qw(POE::Filter);
 use Text::ParseWords;
-
-$VERSION = '1.06';
 
 sub new {
   my $class = shift;
@@ -58,12 +57,9 @@ sub clone {
   return bless $nself, ref $self;
 }
 
-1;
-__END__
+qq[Parse it!];
 
-=head1 NAME
-
-POE::Filter::ParseWords - A POE-based parser to parse text into an array of tokens.
+=pod
 
 =head1 SYNOPSIS
 
@@ -115,16 +111,6 @@ This is not implemented.
 Makes a copy of the filter, and clears the copy's buffer.
 
 =back
-
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
